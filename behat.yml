@@ -1,0 +1,10 @@
+default:
+    extensions:
+        Behat\MinkExtension:
+            base_url: http://www.google.com/
+            goutte: ~
+    suites:
+        default:
+            contexts:
+                - FeatureContext
+                - ExampleContext
