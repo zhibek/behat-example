@@ -5,6 +5,7 @@ pipeline {
         stage('Prepare BDD Tests') {
             steps {
                 echo 'Prepare BDD Tests...'
+                sh 'curl -sS https://getcomposer.org/installer | php'
                 sh 'composer install'
             }
         }
