@@ -1,5 +1,8 @@
 pipeline {
-    agent docker:'php:7.1-alpine'
+
+    agent {
+        docker 'php:7.1-alpine'
+    }
 
     stages {
         stage('Prepare BDD Tests') {
