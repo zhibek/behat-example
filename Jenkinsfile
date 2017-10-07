@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo 'Prepare BDD Tests...'
                 sh 'curl -sS https://getcomposer.org/installer | php'
-                sh 'composer install'
+                sh 'php composer.phar install'
             }
         }
         stage('Run BDD Tests') {
